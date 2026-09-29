@@ -1,0 +1,26 @@
+# Credenciales: el .env real es local y NUNCA se sube.
+.env
+
+# Entorno virtual
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Postgres / backups locales
+*.sql
+*.dump
+
+# Paquetes de entrega (contienen el proyecto completo)
+*.zip
+
+# Archivos de trabajo y datos no incluidos en la rama de Fase B
+entrega/*.csv
+entrega/*preclase*.ipynb
+entrega/Proyecto 1.md

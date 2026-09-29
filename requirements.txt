@@ -1,0 +1,30 @@
+# Proyecto 1 - Bodega de datos de siniestralidad vial (RA1)
+# Python 3.11 o superior.
+#
+# Instalacion:
+#     python -m venv .venv
+#     source .venv/bin/activate
+#     pip install -r requirements.txt
+#
+# Se fijan rangos, no versiones exactas, con dos motivos:
+#   1. El enunciado exige que la entrega se pueda instalar en un entorno limpio.
+#   2. Una version exacta quedan obsoleta en semanas y bloquea la instalacion.
+# El limite superior se mantiene para que una version mayor con cambios
+# incompatibles no se instale sin que nadie lo note.
+
+# --- Nucleo del ETL (Fase B) ---
+pandas>=3.0,<4
+SQLAlchemy>=2.1,<3
+psycopg[binary]>=3.3,<4
+python-dotenv>=1.2,<2
+
+# --- Ejecucion de los notebooks (Fases B, C y D) ---
+jupyterlab>=4.6,<5
+nbformat>=5.11,<6
+nbconvert>=7.17,<8
+ipykernel>=7.3,<8
+
+# --- Visualizaciones e informe (Fases C y D) ---
+plotly>=6,<7
+matplotlib>=3.11,<4
+seaborn>=0.13,<1
